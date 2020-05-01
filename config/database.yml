@@ -1,0 +1,29 @@
+development:
+ adapter: postgresql
+ host: localhost
+ encoding: unicode
+ pool: 10
+ username: postgres
+ password: postgres
+ database: shorturls
+ port: 5432
+
+test:
+ adapter: postgresql
+ host: localhost
+ encoding: unicode
+ pool: 10
+ username: postgres
+ password: postgres
+ database: shorturls
+ port: 5432
+
+production:
+ adapter: postgresql
+ host: localhost
+ encoding: unicode
+ pool: 10
+ username: postgres
+ password: postgres
+ database: shorturls
+ port: 5432

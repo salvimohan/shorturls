@@ -1,0 +1,15 @@
+<h1>Welcome to XYZ.com</h1>
+<p>Please enter the Url here</p>
+
+<div>
+	<%= form_for(@short_url, url: root_path,  remote: true) do |f| %>
+	  <%= f.text_field :url %>
+	  <%= f.submit "Shorten" %>
+	<% end %>
+	<p id="error"></p>
+</div>
+
+<div id="result">
+	<h5>Here's your short URL!</h5>
+	<p id="short_url_result"></p>
+</div>

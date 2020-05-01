@@ -1,0 +1,13 @@
+<h1>Analytics</h1>
+
+<% @short_urls.each do |short_url|%>
+	<div>
+		<h3><%= short_url.url%></h3>
+		<div><%= short_url.short_code_url%></div>
+		<br>
+		<div>Total click: <%= short_url.visits_count%></div>
+		<div>Top countries: <%= short_url.top_countries%></div>
+		<hr />
+	</div>
+<%end%>
+

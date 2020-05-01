@@ -1,0 +1,5 @@
+<% if @short_url.check_valid? %>
+	$("#short_url_result").html("<%=j link_to(@short_url.short_code_url,@short_url.short_code_url)%>")
+<%else%>
+    $("#error").html("Please insert valid Url.")
+<%end%>
